@@ -1,0 +1,48 @@
+@import '../../../app-styles/theme-variables.scss';
+
+.header-wraper {
+    border: 2px solid gold;
+    // width: 95%; 
+    // padding: 15px;
+    background-color: rgb(47, 40, 40);
+    // position: relative;
+    // margin: auto;
+
+    @media only screen and (max-width:1276px) {}
+
+    .container-fluid {
+        img {
+            // width: 13rem;
+            @media only screen and (max-width:1276px) {
+                width: 10rem;
+            }
+        }
+
+        button {
+            background: #ff7425;
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #fff;
+            padding: 15px 30px;
+            position: relative;
+            border-radius: 5px;
+            @media only screen and (max-width:1276px) {
+                font-size: 14px;
+                padding: 12px 20px;
+            }
+        }
+    }
+
+    .nav {
+        li a {
+            color: $primary-light;
+            padding: 2rem;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            @media only screen and (max-width:1276px) {
+                padding: 0.7rem;
+            }
+        }
+    }
+}
