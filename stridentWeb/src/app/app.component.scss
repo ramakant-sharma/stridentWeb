@@ -1,4 +1,13 @@
 @import './app-styles/theme-variables.scss';
+@import './app-styles/custom-scss-selectors.scss';
+
 p{
-  color: $theme-color;
+  @include color($theme-color);
+  @include important-text;
+  @include padding(15px, 30px, 35px, 50px);
+  @include postion(relative, 10px, 20px, 30px, 40px);
+  @include background($bs-pink);
+  @include font-size(38px);
+  @include display-flex;
+  @include justify-content-center;
 }

@@ -1,0 +1,44 @@
+@import './styles-properties.scss';
+
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+@mixin padding($top,$right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+@mixin margin($top,$right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+@mixin postion($postionType, $top,$right, $bottom, $left) {
+  position:$postionType;
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+@mixin color($color) {
+  color:$color;
+}
+@mixin background($color) {
+  background:$color;
+}
+
+@mixin font-size($size) {
+  font-size:$size;
+}
+@mixin display-flex(){
+  display: $flex;
+}
+@mixin justify-content-center{
+  display: $flex;
+  justify-content: $justify-content-center;
+}
