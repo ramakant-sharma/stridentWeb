@@ -8,5 +8,6 @@ p{
   @include postion(relative, 10px, 20px, 30px, 40px);
   @include background($bs-pink);
   @include font-size(38px);
-  @include display-flex(flex);
+  @include display-flex;
+  @include justify-content-center;
 }

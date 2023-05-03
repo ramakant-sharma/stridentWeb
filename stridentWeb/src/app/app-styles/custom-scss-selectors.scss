@@ -1,3 +1,5 @@
+@import './styles-properties.scss';
+
 @mixin important-text {
   color: red;
   font-size: 25px;
@@ -33,6 +35,10 @@
 @mixin font-size($size) {
   font-size:$size;
 }
-@mixin display-flex($van){
-  display: $van;
+@mixin display-flex(){
+  display: $flex;
+}
+@mixin justify-content-center{
+  display: $flex;
+  justify-content: $justify-content-center;
 }
