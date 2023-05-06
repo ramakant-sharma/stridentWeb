@@ -51,7 +51,7 @@
 
 @mixin  list-style-none{
 list-style: $none;
-}
+} 
 @mixin height($height){
   height: $height;
 };
@@ -66,4 +66,7 @@ list-style: $none;
 }
 .border-radius{
   border-radius: 100%;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
