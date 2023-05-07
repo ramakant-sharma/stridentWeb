@@ -1,4 +1,5 @@
 @import './styles-properties.scss';
+@import './sizing-variables.scss';
 
 @mixin important-text {
   color: red;
@@ -55,6 +56,18 @@ list-style: $none;
 @mixin height($height){
   height: $height;
 };
+@mixin box-shadow{
+box-shadow: $blog-bg-box-shadow; 
+}
+@mixin Pumpkin-plues-light{
+   background-color: $Pumpkin-plues-light;
+}
+@mixin primary-color{
+  color: $primary-color;
+}
+@mixin primary-light{
+  color: $primary-light;
+}
 
 // custom classes
 
@@ -65,8 +78,20 @@ list-style: $none;
   margin-left: 20px;
 }
 .border-radius{
-  border-radius: 100%;
+  border-radius: 100%; 
 }
 .cursor-pointer{
   cursor: pointer;
+}
+.inner-space{
+  padding:$inner-space;
+}
+.outer-space{
+  margin: $outer-space;
+}
+.z-index{
+  z-index: 1;
+}
+.text-align-center{
+  text-align: center;
 }

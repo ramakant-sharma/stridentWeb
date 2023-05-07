@@ -5,7 +5,7 @@
 
   .footer-wraper {
       border: 2px solid gold;
-      width: 100%;
+    //   width: 100%;
       @include background($dark-color);
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -59,14 +59,18 @@
           }
 
           .footer-social {
+               margin-left: -2rem;
               a {
-                  width: 40px;
-                  height: 40px;
+                  width: 50px;
+                  height: 50px;
                   margin-right: 1rem;
                   @include background($icon-primary-color);
-                //   line-height: 40px;
+                  line-height: 50px;
                   @include color($primary-light);
                   overflow-wrap: break-word;
+                  text-align: center;
+                  border-radius: 100%;
+                  font-size: 16px;
               }
           }
       }

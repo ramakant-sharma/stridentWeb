@@ -5,73 +5,69 @@
 
 .blogs-wraper{
     border: 2px solid rgb(0, 255, 81);
-    width: 100%;
      padding: 5px;
      background-image: url("../../../../assets/img/blog-bg.png");
      background-repeat: no-repeat;
      background-size:cover;
      .row{
+        width: 100%;
+      
         h5{
             @include color($Pumpkin-plues-light);
             text-transform: capitalize;
-            font-family: 'Jost', sans-serif;
         }
-        h2{
+        h2{ 
           @include color($blog-primary-color);
-          font-family: 'Jost', sans-serif;
           overflow-wrap: break-word;
           text-transform: capitalize;
         }
      }
      .card-wrraper{
+
         padding: 2rem 6rem 10rem 6rem;
+        @media only screen and (max-width:578px){
+            padding: 2rem 0rem 10rem 0rem;
+            margin-top: 2rem;
+        }
      
      .single-post2{
         img{
             max-width: 100%;
-            width: 100%;
     :hover{
         transition: all 0.5s ease-in-out;
-        transition: width 2s;
+        transition: width 2s;  
         transform: scale(20px 20px);
     }
         }
       
      }
      .blog-content2{
-    box-shadow: 0px 2px 60px 0px rgba(0, 0, 0, 0.1);
-    // @include box-shadow($blog-bg-box-shadow);
-    background: #fff;
-    // @include background-color($primary-light);
-
+    @include box-shadow;
+    @include primary-color;
+    }
     
        .date-home{
-        // @include background-color($primary-color);
-        background-color: #ff7425;
+        @include Pumpkin-plues-light;
          top: -60px;
-         color: #fff;
-          // @include color($primary-light);
+         @include primary-light;
          padding: 5px 15px;
-        //  border-radius: 6px;
         left: 30px;
        }
        a{
        color: black;
-        font-family: 'Jost', sans-serif;
        }
        p{
         color: #6e6e6e;
        }
        .blog-btn{
         a{
-                // @include border-color($primary-color);
-            border-color: #ff7425;
-                // @include color($primary-color);
-            color: #ff7425;
+            cursor: pointer;
+            @include primary-color;
+            // color: #ff7425;
+            @include primary-color;
             border-bottom: 3px solid #ff7425;
-                // @include border-bottom($primary-color);
         }
        }
      }
     }
-} 
+// } 

@@ -5,12 +5,14 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { OurBlogsComponent } from './components/our-blogs/our-blogs.component';
+import { OurServicesComponent } from './components/our-services/our-services.component';
 
 
 @NgModule({
   declarations: [
     HomePageComponent,
-    OurBlogsComponent
+    OurBlogsComponent,
+    OurServicesComponent
   ],
   imports: [
     CommonModule,

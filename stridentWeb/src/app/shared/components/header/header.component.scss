@@ -26,5 +26,14 @@
             color: $primary-light;
             @media only screen and (max-width:1276px) {
                 padding: 0.7rem;
-            }}}} 
+            }}}
+           .search-icon i{
+            color: white;
+            cursor: pointer;
+            //   display: inline-block;
+              padding-right: 2rem;
+            //   padding-top: 1rem;
+           
+           }
+        } 
 
