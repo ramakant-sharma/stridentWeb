@@ -1,73 +1,67 @@
 @import '../../../app-styles/theme-variables.scss';
-  @import '../../../app-styles/custom-scss-selectors.scss';
-  @import '../../../app-styles/font-size.scss';
+@import '../../../app-styles/custom-scss-selectors.scss';
+@import '../../../app-styles/font-size.scss';
+@import '../../../app-styles/styles-classes.scss';
 
-
-.blogs-wraper{
+.blogs-wraper {
     border: 2px solid rgb(0, 255, 81);
-     padding: 5px;
-     background-image: url("../../../../assets/img/blog-bg.png");
-     background-repeat: no-repeat;
-     background-size:cover;
-     .row{
-        width: 100%;
-      
-        h5{
-            @include color($Pumpkin-plues-light);
-            text-transform: capitalize;
-        }
-        h2{ 
-          @include color($blog-primary-color);
-          overflow-wrap: break-word;
-          text-transform: capitalize;
-        }
-     }
-     .card-wrraper{
+    padding: 5px;
+    @include background-size-cover;
+    @include background-repeat-none;
+    @include background( url("../../../../assets/img/blog-bg.png"));
 
-        padding: 2rem 6rem 10rem 6rem;
-        @media only screen and (max-width:578px){
-            padding: 2rem 0rem 10rem 0rem;
-            margin-top: 2rem;
+    .row {
+        width: 100%;
+        h5 {
+            @include color($Pumpkin-plues-light);
         }
-     
-     .single-post2{
-        img{
-            max-width: 100%;
-    :hover{
-        transition: all 0.5s ease-in-out;
-        transition: width 2s;  
-        transform: scale(20px 20px);
-    }
+
+        h2 {
+            @include color($dark-shade-of-gray);
         }
-      
-     }
-     .blog-content2{
-    @include box-shadow;
-    @include primary-color;
     }
-    
-       .date-home{
-        @include Pumpkin-plues-light;
-         top: -60px;
-         @include primary-light;
-         padding: 5px 15px;
-        left: 30px;
-       }
-       a{
-       color: black;
-       }
-       p{
-        color: #6e6e6e;
-       }
-       .blog-btn{
-        a{
-            cursor: pointer;
+
+    .card-wrraper {
+        @include padding(2rem, 6rem, 10rem, 6rem);
+        @media only screen and (max-width:578px) {
+            @include padding(2rem, 0rem, 10rem, 0rem);
+            @include margin(2rem, auto, auto, auto)
+        }
+
+        .single-post2 {
+        
+            img {
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .blog-content {
+            @include box-shadow;
             @include primary-color;
-            // color: #ff7425;
-            @include primary-color;
-            border-bottom: 3px solid #ff7425;
         }
-       }
-     }
+
+        .date-home {
+            @include Pumpkin-plues-light;
+            @include postion(absolute, -60px, auto, auto, auto);
+            @include primary-light;
+            @include padding(9px, 10px, 10px, 9px);
+        }
+
+        a {
+            @include color($dark-color);
+        }
+
+        p {
+            @include color($dark-shade-of-gray);
+        }
+
+        .blog-btn {
+            a {
+                @include primary-color;
+                border-bottom: 3px solid $primary-color;
+            }
+        }
     }
-// } 
+}

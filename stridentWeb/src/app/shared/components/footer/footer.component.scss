@@ -1,14 +1,14 @@
   /********footer-start*************/
   @import '../../../app-styles/theme-variables.scss';
   @import '../../../app-styles/custom-scss-selectors.scss';
-  @import '../../../app-styles/font-size.scss'; 
+  @import '../../../app-styles/font-size.scss';
+  @import '../../../app-styles/styles-classes.scss';
 
   .footer-wraper {
       border: 2px solid gold;
-    //   width: 100%;
+        // width: 100%;
       @include background($dark-color);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+      @include padding(4rem, 0rem, 4rem, 0rem);
       .footer-right-panel {
           .redux-footer {
               .f-contact {
@@ -16,15 +16,18 @@
                       @include color($Link-Water-light);
                   }
               }
+
               .widgettitle {
                   @include color($primary-light);
               }
           }
+
           .menu-our-links-container {
               .menu {
                   li {
-                    @include color($Link-Water-light);
-                    //   @include color($primary-light);
+                      @include color($Link-Water-light);
+
+                      //   @include color($primary-light);
                       .plus {
                           content: "+";
                           @include color($Pumpkin-plues-light);
@@ -33,15 +36,18 @@
               }
           }
       }
+
       ul .text {
           a {
               @include color($Link-Water-light);
           }
+
           span {
               @include color($Pumpkin-plues-light);
           }
       }
   }
+
   .mc4wp-form-fields {
       ul {
           .header-input {
@@ -59,17 +65,11 @@
           }
 
           .footer-social {
-               margin-left: -2rem;
+              margin-left: -2rem;
               a {
-                  width: 50px;
-                  height: 50px;
-                  margin-right: 1rem;
                   @include background($icon-primary-color);
-                  line-height: 50px;
                   @include color($primary-light);
-                  overflow-wrap: break-word;
-                  text-align: center;
-                  border-radius: 100%;
+                  overflow-wrap: $overflow-wrap;
                   font-size: 16px;
               }
           }

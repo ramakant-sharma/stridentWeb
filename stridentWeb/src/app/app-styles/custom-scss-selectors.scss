@@ -24,10 +24,10 @@
 
 @mixin postion($postionType, $top, $right, $bottom, $left) {
   position: $postionType;
- top: $top;
- right: $right;
- bottom: $bottom;
- left: $left;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }
 
 @mixin color($color) {
@@ -37,6 +37,7 @@
 @mixin background($color) {
   background: $color;
 }
+
 @mixin font-size($size) {
   font-size: $size;
 }
@@ -50,48 +51,78 @@
   justify-content: $justify-content-center;
 }
 
-@mixin  list-style-none{
-list-style: $none;
-} 
-@mixin height($height){
+@mixin list-style-none {
+  list-style: $none;
+}
+
+@mixin height($height) {
   height: $height;
-};
-@mixin box-shadow{
-box-shadow: $blog-bg-box-shadow; 
 }
-@mixin Pumpkin-plues-light{
-   background-color: $Pumpkin-plues-light;
+
+@mixin box-shadow {
+  box-shadow: $blog-bg-box-shadow;
 }
-@mixin primary-color{
+
+@mixin Pumpkin-plues-light {
+  background-color: $Pumpkin-plues-light;
+}
+
+@mixin primary-color {
   color: $primary-color;
 }
-@mixin primary-light{
+
+@mixin primary-light {
   color: $primary-light;
+}
+@mixin background-repeat-none{
+  background-repeat: no-repeat;
+}
+@mixin background-size-cover{
+  background-size: cover;
+}
+@mixin transition-2s{
+  transition: 2s;
+}
+@mixin width-10rem{
+  width: 10rem;
 }
 
 // custom classes
 
-.list-styles-none{
+.list-styles-none {
   list-style: $none;
 }
-.margin-left{
+
+.margin-left {
   margin-left: 20px;
 }
-.border-radius{
-  border-radius: 100%; 
+
+.border-radius {
+  border-radius: 100%;
 }
-.cursor-pointer{
-  cursor: pointer;
+
+// .cursor-pointer {
+  // cursor: pointer;
+// }
+
+.inner-space {
+  padding: $inner-space;
 }
-.inner-space{
-  padding:$inner-space;
-}
-.outer-space{
+
+.outer-space {
   margin: $outer-space;
 }
-.z-index{
+
+.z-index-1 {
   z-index: 1;
 }
-.text-align-center{
+
+.text-align-center {
   text-align: center;
+}
+.text-transform-capitalize{
+text-transform: capitalize;
+} 
+.left-30{
+  left: 30px;
 }
