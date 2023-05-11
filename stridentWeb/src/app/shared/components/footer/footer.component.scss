@@ -6,9 +6,9 @@
 
   .footer-wraper {
       border: 2px solid gold;
-        // width: 100%;
       @include background($dark-color);
       @include padding(4rem, 0rem, 4rem, 0rem);
+
       .footer-right-panel {
           .redux-footer {
               .f-contact {
@@ -27,7 +27,6 @@
                   li {
                       @include color($Link-Water-light);
 
-                      //   @include color($primary-light);
                       .plus {
                           content: "+";
                           @include color($Pumpkin-plues-light);
@@ -66,6 +65,7 @@
 
           .footer-social {
               margin-left: -2rem;
+
               a {
                   @include background($icon-primary-color);
                   @include color($primary-light);

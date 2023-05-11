@@ -8,10 +8,11 @@
     padding: 5px;
     @include background-size-cover;
     @include background-repeat-none;
-    @include background( url("../../../../assets/img/blog-bg.png"));
+    @include background(url("../../../../assets/img/blog-bg.png"));
 
     .row {
         width: 100%;
+
         h5 {
             @include color($Pumpkin-plues-light);
         }
@@ -23,13 +24,14 @@
 
     .card-wrraper {
         @include padding(2rem, 6rem, 10rem, 6rem);
+
         @media only screen and (max-width:578px) {
             @include padding(2rem, 0rem, 10rem, 0rem);
             @include margin(2rem, auto, auto, auto)
         }
 
         .single-post2 {
-        
+
             img {
                 &:hover {
                     transform: scale(1);

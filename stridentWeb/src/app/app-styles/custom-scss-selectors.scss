@@ -74,16 +74,20 @@
 @mixin primary-light {
   color: $primary-light;
 }
-@mixin background-repeat-none{
+
+@mixin background-repeat-none {
   background-repeat: no-repeat;
 }
-@mixin background-size-cover{
+
+@mixin background-size-cover {
   background-size: cover;
 }
-@mixin transition-2s{
+
+@mixin transition-2s {
   transition: 2s;
 }
-@mixin width-10rem{
+
+@mixin width-10rem {
   width: 10rem;
 }
 
@@ -101,9 +105,9 @@
   border-radius: 100%;
 }
 
-// .cursor-pointer {
-  // cursor: pointer;
-// }
+.cursor-pointer {
+  cursor: pointer;
+}
 
 .inner-space {
   padding: $inner-space;
@@ -120,9 +124,11 @@
 .text-align-center {
   text-align: center;
 }
-.text-transform-capitalize{
-text-transform: capitalize;
-} 
-.left-30{
+
+.text-transform-capitalize {
+  text-transform: capitalize;
+}
+
+.left-30 {
   left: 30px;
 }
