@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { OurBlogsComponent } from './components/our-blogs/our-blogs.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { WatchUsComponent } from './components/watch-us/watch-us.component';
+import { CounterAreaComponent } from './components/counter-area/counter-area.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { WatchUsComponent } from './components/watch-us/watch-us.component';
     HomePageComponent,
     OurBlogsComponent,
     OurServicesComponent,
-    WatchUsComponent
+    WatchUsComponent,
+    CounterAreaComponent
   ],
   imports: [
     CommonModule,

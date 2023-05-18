@@ -5,7 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { StickyHeaderComponent } from './components/sticky-header/sticky-header.component';
 import { SmallDevicesHeaderComponent } from './components/small-devices-header/small-devices-header.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+// import {NgbModule} from './components/carousel-slider/carousel-slider.component';
 @NgModule({
   declarations: [
     CarouselSliderComponent,
@@ -14,7 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SmallDevicesHeaderComponent,
     FooterComponent
   ],
-  imports: [CommonModule],
+  // imports: [CommonModule, NgbModule],
   exports: [
     CarouselSliderComponent,
     HeaderComponent,

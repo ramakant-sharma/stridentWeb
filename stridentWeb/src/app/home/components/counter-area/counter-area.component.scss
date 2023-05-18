@@ -1,0 +1,85 @@
+@import '../../../app-styles/theme-variables.scss';
+@import '../../../app-styles/custom-scss-selectors.scss';
+@import '../../../app-styles/font-size.scss';
+@import '../../../app-styles/styles-classes.scss';
+
+.count-wrraper {
+    border: 2px solid darkorange;
+    width: 100%;
+    background-image: url("../../../../assets/img/counter-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .counter-area {
+        @include padding(90px, auto, 90px, 90px);
+
+        .row {
+            @include padding(auto, 6rem, auto, 6rem);
+
+            @media only screen and (max-width:768px) {
+                @include padding(auto, 0px, auto, 0px);
+            }
+
+            @media only screen and (max-width:578px) {
+                display: contents;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .col-lg {
+                width: 25%;
+
+                @media only screen and (max-width:578px) {
+                    // display: contents;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .counter {
+                    display: flex;
+
+                    @media only screen and (max-width:1400px) {
+                        display: contents;
+                    }
+
+                    &:nth-of-type(1) {
+                        margin-bottom: 2rem;
+                    }
+
+                    .count {
+                        color: $primary-light;
+                        margin-bottom: 5px;
+                        overflow-wrap: $overflow-wrap;
+
+                        @media only screen and (max-width:992px) {
+                            font-size: 45px;
+                            font-weight: 600;
+                            margin-top: 2rem;
+                        }
+
+                        @media only screen and (max-width:578px) {
+                            font-size: 46px;
+                            font-weight: 800;
+                            margin-top: 2rem;
+                            margin-left: 2rem;
+                        }
+                    }
+
+                    p {
+                        color: $light-gray-primer;
+                        @include padding(22px, 0px, 0px, 30px);
+
+                        @media only screen and (max-width:578px) {
+                            font-size: 36px;
+                            @include padding(0px, 0px, 0px, 30px);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

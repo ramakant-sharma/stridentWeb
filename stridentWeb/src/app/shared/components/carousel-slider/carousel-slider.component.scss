@@ -1,0 +1,107 @@
+@import '../../../app-styles/theme-variables.scss';
+@import '../../../app-styles/custom-scss-selectors.scss';
+@import '../../../app-styles/font-size.scss';
+@import '../../../app-styles/styles-classes.scss';
+  
+  .sl{ 
+    //.head-slider{}
+    .carousel-item{
+      //.img{}
+      .slid-text{ 
+        @include top(20%);
+        @media only screen and (max-width:999px){
+         @include left(-15rem);
+        }
+        @media only screen and (max-width:778px){
+          @include left(-30rem);
+         }
+    
+
+        .single-slider{
+          @include width(1483px);
+         @include min-height(925px !important);
+    @include background-size-cover;
+    .slider-line{
+    @include  bottom(240px);
+    //img{} 
+    }
+    .slider-line2{
+      @include  bottom(169px);
+      @include left(-30px);
+    // img{}
+    }
+        }
+            }
+      }
+      .row{
+        @include justify-content-center(center !important);
+        @include  align-items(center);
+        @media only screen and (max-width:1100px){
+          @include justify-content-center(left);
+          @include  align-items(left);
+          
+        }
+        .slider-content{
+    h2{
+    @include color($bs-white);
+    @media only screen and (max-width:1250px){
+     @include line-height(1.3);
+      @include margin(0px,0px,20px,0px);
+      @include  font-weight(500);
+      @include font-size(40px);
+    }
+    @media only screen and (max-width:999px){
+      @include line-height(1);
+      @include margin(0px,0px,20px,0px);
+      @include  font-weight(600);
+      @include font-size(26px); 
+    }
+   
+    span{
+      @include color($primary-color); //#ff7425
+    }
+    }
+    p{
+    @include color($bs-white); //#ffff
+    @media only screen and (max-width:999px){
+      @include line-height(20px);
+      @include font-size(14px); 
+    }
+    @media only screen and (max-width:778px){
+      @include display(list-item); 
+     }
+    }
+    .slider-btn{
+      @include display(inline-block); 
+    .btn{
+      border: 2px solid $primary-color; //#ff7425
+      @include color($bs-white); //#ffff
+    @include padding(20px, 30px, 20px, 30px);
+    @include background($primary-color); //#ff7425
+
+    &:hover{
+      @include background(#444); //#444
+      @include color($bs-white); //#ffff
+    }
+    @media only screen and (max-width:999px){
+      @include font-size(14px);
+      @include padding (10px , 20px , 10px , 20px);
+    }
+    @media only screen and (max-width:778px){
+      @include font-size(14px);
+      @include padding (10px , 20px , 10px , 20px);
+     }
+    }
+    .active{
+      @include background(none); //none
+      @include color($bs-white); //#ffff
+      border: 1px solid $bs-white;
+      &:hover{
+        @include background(none); //none
+      }
+    }
+    }
+        }
+      }
+     
+  }

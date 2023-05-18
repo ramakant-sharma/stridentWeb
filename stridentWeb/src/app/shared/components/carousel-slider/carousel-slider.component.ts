@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./carousel-slider.component.scss']
 })
 export class CarouselSliderComponent {
-
+  showCarousel = true;
 }
+ 
