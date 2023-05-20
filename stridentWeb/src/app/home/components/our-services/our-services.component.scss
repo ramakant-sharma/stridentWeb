@@ -1,0 +1,68 @@
+@import '../../../app-styles/theme-variables.scss';
+@import '../../../app-styles/custom-scss-selectors.scss';
+@import '../../../app-styles/font-size.scss';
+@import '../../../app-styles/styles-classes.scss';
+
+
+.our-service-wrraper {
+    border: 2px solid darkmagenta;
+    @include background(url("../../../../assets/img/services-bg.png"));
+    @include background-size-cover;
+    @include background-repeat-none;
+    @include padding(7rem, 0rem, 0rem, 0rem);
+
+    .row {
+        width: 100%;
+
+        h5 {
+            @include primary-color;
+        }
+
+        .service-item {
+            border: 2px solid $Light-grayish-blue;
+
+            .item {
+                @include transition-2s;
+
+                .services-thumb {
+                    @include background($secondary-color);
+                }
+
+                .services-content {
+                    h4 {
+                        @include color($dark-shade-of-gray);
+                        overflow-wrap: $overflow-wrap;
+
+                        :hover {
+                            color: $primary-color; //#ff7425
+                        }
+                    }
+
+                    p {
+                        overflow-wrap: $overflow-wrap;
+                        @include color($Dim-Gray); //#6e6e6e
+                    }
+
+                    a {
+                        @include color($dark-shade-of-gray); //#232323
+
+                        &:hover {
+                            color: $primary-color; //#ff7425
+                            transition: 0.6s;
+                        }
+
+                        .span {
+                            @include color($dark-shade-of-gray); //#232323
+
+                            &:hover {
+                                color: $primary-color; //#ff7425
+                                transition: 0.6s;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -9,5 +9,5 @@ p{
   @include background($bs-pink);
   @include font-size(38px);
   @include display-flex;
-  @include justify-content-center;
+  @include justify-content-center(center);
 }

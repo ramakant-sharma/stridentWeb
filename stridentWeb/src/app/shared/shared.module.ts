@@ -4,6 +4,11 @@ import { CarouselSliderComponent } from './components/carousel-slider/carousel-s
 import { HeaderComponent } from './components/header/header.component';
 import { StickyHeaderComponent } from './components/sticky-header/sticky-header.component';
 import { SmallDevicesHeaderComponent } from './components/small-devices-header/small-devices-header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AskedQuestionComponent } from './components/asked-question/asked-question.component';
+// import {NgbModule} from './components/carousel-slider/carousel-slider.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { YearsOfExperienceComponent } from './components/years-of-experience/years-of-experience.component';
 
 @NgModule({
   declarations: [
@@ -11,13 +16,20 @@ import { SmallDevicesHeaderComponent } from './components/small-devices-header/s
     HeaderComponent,
     StickyHeaderComponent,
     SmallDevicesHeaderComponent,
+    FooterComponent,
+    AskedQuestionComponent,
+    YearsOfExperienceComponent,
+    
   ],
-  imports: [CommonModule],
+  imports: [CommonModule,MatExpansionModule],
   exports: [
     CarouselSliderComponent,
     HeaderComponent,
     StickyHeaderComponent,
     SmallDevicesHeaderComponent,
+    FooterComponent,
+    AskedQuestionComponent,
+    YearsOfExperienceComponent,
   ],
 })
 export class SharedModule {}

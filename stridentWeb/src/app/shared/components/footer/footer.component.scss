@@ -1,0 +1,77 @@
+  /********footer-start*************/
+  @import '../../../app-styles/theme-variables.scss';
+  @import '../../../app-styles/custom-scss-selectors.scss';
+  @import '../../../app-styles/font-size.scss';
+  @import '../../../app-styles/styles-classes.scss';
+
+  .footer-wraper {
+      border: 2px solid gold;
+      @include background($dark-color);
+      @include padding(4rem, 0rem, 4rem, 0rem);
+
+      .footer-right-panel {
+          .redux-footer {
+              .f-contact {
+                  p {
+                      @include color($Link-Water-light);
+                  }
+              }
+
+              .widgettitle {
+                  @include color($primary-light);
+              }
+          }
+
+          .menu-our-links-container {
+              .menu {
+                  li {
+                      @include color($Link-Water-light);
+
+                      .plus {
+                          content: "+";
+                          @include color($Pumpkin-plues-light);
+                      }
+                  }
+              }
+          }
+      }
+
+      ul .text {
+          a {
+              @include color($Link-Water-light);
+          }
+
+          span {
+              @include color($Pumpkin-plues-light);
+          }
+      }
+  }
+
+  .mc4wp-form-fields {
+      ul {
+          .header-input {
+              @include height(4.2rem);
+              outline: none !important;
+              border: 1px solid $input-white-smoke;
+              @include background($input-white-smoke);
+          }
+
+          button {
+              @include postion(absolute, 15px, 15px, 15px, auto);
+              @include background($primary-color);
+              @include color($primary-light);
+              @include padding(5px, 15px, 5px, 15px);
+          }
+
+          .footer-social {
+              margin-left: -2rem;
+
+              a {
+                  @include background($icon-primary-color);
+                  @include color($primary-light);
+                  overflow-wrap: $overflow-wrap;
+                  font-size: 16px;
+              }
+          }
+      }
+  }

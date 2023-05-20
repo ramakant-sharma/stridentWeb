@@ -1,0 +1,331 @@
+@import '../../../app-styles/theme-variables.scss';
+@import '../../../app-styles/custom-scss-selectors.scss';
+@import '../../../app-styles/font-size.scss';
+@import '../../../app-styles/styles-classes.scss';
+
+ .experience-wrraper{
+   .service-section{ 
+ 
+    @include padding(120px, 0px, 150px, 0px); 
+    @include overflow(hidden);
+        .service-leftlayer{
+            @include top(0);
+            @include left(70px);
+            img{
+                @include height(auto);
+            }
+        }
+        .service-dotimage {
+            @include left(334px);
+            @include bottom(102px);
+    margin-bottom: 0!important;
+    img{
+        @include height(auto);
+    height: auto;
+    }
+        }
+        .row{
+            .col-lg-6{
+                @include max-width(50%);
+                @include padding(0px, 15px, 0px, 15px);
+                margin-top: 30px;
+    @media only screen and (max-width:999px){
+       @include display(contents);
+    }
+    .service_contentbox{
+        .row{
+            @include flex-wrap(wrap);
+            @include margin(0px ,-15px ,0px, -15px);
+              @include display(flex);
+    .service-box {
+        @include background(#ffffff);
+        @include border-radius(10px);
+        @include padding(38px, 24px, 28px, 30px);
+    @include margin(0px ,0px ,-12px, 0px);
+    @include display(inline-block);
+    box-shadow: 1px 21px 46px rgb(0 0 0 / 4%);
+
+    .service-marketicon{
+        @include background(#fff7f4);
+        @include border-radius(100px);
+    @include height (100px);
+    @include width(100px);
+    @include line-height(100px);
+    @include text-align(center);
+    @include margin(0px ,0px ,20px, 4px);
+    @include display(inline-block);
+    transition: all 0.3s ease-in-out;
+    img{
+        @include max-width(100%);
+        @include height(auto);
+    }
+    }
+    h4{
+        @include font-size(26px);
+        @include line-height(30px);
+        @include font-weight(700);
+        @include color(#202020);
+        @include padding(0px, 65px, 0.5rem, 0px);
+    }
+    p{
+        @include margin(0px ,0px ,10px, 0px);
+        @include color($dim-Gray);
+        @include font-size(18px);
+        @include line-height(26px);
+      @include font-weight(500);
+    }
+    a{
+        @include outline(none);
+    @include color($dim-Gray);
+        @include text-decoration(none !important);
+        @include background-color(transparent);
+        i{
+            @include background($primary-color);
+            @include border-radius(100px);
+            @include height(45px);
+            @include width(45px);
+            @include line-height(45px);
+            @include margin(0px ,0px ,0px, -2px);
+            @include text-align(center);
+            @include display(inline-block);
+            transition: all 0.3s ease-in-out;
+            &::before{
+                @include font-size(18px);
+                @include padding(2px, 0px, 0px, 0px);
+                @include color($primary-light);
+                @include line-height(45px);
+                @include text-align(center);
+            }
+        }
+    }
+
+    }
+        }
+    }
+          .box-top{
+            @include padding(37px, 0px, 0px, 0px);
+            .service-box{
+             @include background($primary-light);
+             @include border-radius(10px);
+    @include padding(38px, 24px, 28px, 30px);
+    @include margin(0px, 0px, -12px, 0px);
+    @include display(inline-block);
+    box-shadow: 1px 21px 46px rgb(0 0 0 / 4%);
+    .service-producticon{
+        @include background($Very-pale-mostly-white-orange);
+        @include border-radius(100px);
+        @include height(100px);
+        @include width(100px);
+        @include line-height(100px);
+        @include text-align(center);
+        @include margin(0px, 0px, 20px, 4px);
+        @include display(inline-block);
+        transition: all 0.3s ease-in-out;
+    }
+            }
+          }
+          .service-box{
+            @include background($Very-pale-mostly-white-orange);
+            @include border-radius(10px);
+            @include padding(38px, 24px, 28px, 30px);
+            @include margin(40px, 0px, -12px, 0px);
+            @include display(inline-block);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 1px 21px 46px rgb(0 0 0 / 4%);
+
+            .service-designicon{
+                @include background($Very-pale-mostly-white-orange);
+                @include border-radius(100px);
+                @include height(100px);
+                @include width(100px);
+                @include line-height(100px);
+                @include text-align(center);
+                @include margin(40px, 0px, 20px, 4px);
+                @include display(inline-block);
+                transition: all 0.3s ease-in-out;
+
+                img{
+                    @include max-width(100%);
+                    @include height(auto);
+                    @include line-height(100px);
+                    @include text-align(center);
+                }
+                h4{
+                    @include padding(0px, 65px, 0px, 0px);
+                    @include font-size(26px);
+                    @include line-height(30px);
+                    @include font-weight(700);
+                    @include color($Nero); //#202020
+                }
+                p{
+                    @include margin(0px, 0px, 10px, 0px);
+                    @include color($dim-Gray);
+                    @include font-size(18px);
+                    @include line-height(26px);
+                    @include font-weight(500);
+                }
+                a{
+                    @include text-decoration(none !important);
+                    @include outline(none);
+                    @include color($Gainsboro); //#dddddd
+                   background-color: transparent;
+    i{
+        @include background($primary-color);  //#fa6220
+        @include border-radius(100px);
+        @include height(45px);
+        @include width(45px);
+        @include line-height(45px);
+        @include margin(0px, 0px, 0px, -2px);
+        @include text-align(center);
+        @include display(inline-block);
+        transition: all 0.3s ease-in-out;
+        &::before{
+            @include font-size(18px);
+            @include padding(2px, 0px, 0px, 0px);
+            @include color($primary-light);
+            @include line-height(45px);
+            @include text-align(center);
+        }
+    }
+                }
+            }
+          }
+          .service_content{
+            opacity: 1;
+    @include padding(194px, 0px, 0px, 48px);
+    @include position(relative !important);
+ 
+
+    .service-rightcircle{
+        @include position(absolute);
+        @include right(-38px);
+        @include top(162px);
+    margin-bottom: 0!important;
+    img{
+        @include max-width(100%);
+        @include height(auto);
+    }
+    }
+    h6{
+        @include font-size(22px);
+        @include line-height(30px);
+    @include font-weight(500);
+    @include letter-spacing(4.4px);
+    @include color($primary-color); //#f86823
+    @include margin(0px, 0px, 0.5rem, 0px);
+    @media only screen and (max-width:999px){
+        @include font-size(16px);
+        @include line-height(20px);
+        @include font-weight(400);
+        @include letter-spacing(2.4px);
+    }
+    }
+    h2{
+        @include margin(0px, 0px, 18px, 0px);
+        @include padding(0px, 10px, 0px, 0px);
+        @include font-size(56px);
+        @include line-height(50px);
+        @include font-weight(600);
+        @include color($Nero); //#202020
+        @include display(block);
+        @media only screen and (max-width:999px){
+            @include font-size(46px);
+            @include line-height(50px);
+            @include font-weight(500);
+            @include letter-spacing(2.4px);
+        }
+    }
+    p{
+        @include margin(0px, 0px, 12px, 0px);
+        @include font-size(20px);
+        @include line-height(30px);
+        @include font-weight(500);
+        @include color($Nero); //#202020
+        @media only screen and (max-width:999px){
+            @include font-size(20px);
+            @include line-height(20px);
+            @include font-weight(400);
+        }
+    }
+    .list-unstyled{
+        @include margin(0px, 0px, 0px !important, 0px);
+        @include padding(0px, 0px, 0px, 0px !important);
+        @include color($primary-light); //#fff
+    list-style: none;
+    .text{
+        @include font-size(16px);
+        @include line-height(30px);
+        @include font-weight(500);
+        @include color($Nero); //#202020
+        list-style: none;
+        @media only screen and (max-width:999px){
+            @include font-size(24px);
+            @include line-height(30px);
+            @include font-weight(400);
+        }
+        i{
+            @include background($primary-color);  //#fa6220
+            @include border-radius(100px);
+    @include height(18px);
+    @include width(18px);
+    @include line-height(18px);
+    @include text-align(center);
+    @include margin(0px, 12px, 0px, 0px);
+    @include display(inline-block);
+    transition: all 0.3s ease-in-out;
+    @include font-size(20px);
+    @include font-weight(500);
+    @include color($primary-light); //#fff
+        }
+    }
+    .text1{
+        @include margin(7px, 0px, 20px, 0px);
+    }
+   
+    }
+ 
+          }
+}
+        }
+        a{
+            @include background($primary-color);  //#fa6220
+            @include font-size(20px);
+            @include line-height(30px);
+            @include font-weight(600);
+            @include border-radius(30px);
+            @include padding(7px, 26px, 4px, 31px);
+            @include text-align(center);
+            @include display(inline-flex);
+            @include text-decoration(none !important);
+            @include color($primary-light); //#fff
+            cursor: pointer;
+            @media only screen and (max-width:999px){
+                @include font-size(16px);
+                @include line-height(20px);
+                @include font-weight(400);
+                @include padding(3px, 16px, 4px, 20px);
+            }
+   i{
+    @include color($primary-light); //#fff
+   }
+       
+        }
+      
+    }
+    .service-rightlayer{
+        @include position(absolute);
+        @include bottom(-20px);
+        @include right(112px);
+           margin-bottom: 0!important;
+          margin: 0 0 1rem;
+          @include display(block);
+           float: left;
+    img{
+        @include max-width(100%);
+        @include height(auto);
+    float: left;
+    }
+    }
+
+   }
+ 
