@@ -62,7 +62,7 @@
     }
     }
     p{
-    @include color($bs-white); //#ffff
+    @include color($bs-white); //#ffff 
     @media only screen and (max-width:999px){
       @include line-height(20px);
       @include font-size(14px); 
